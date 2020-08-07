@@ -21,20 +21,20 @@ router.get('/:id', (req, res) => {
       where: {
         id: req.params.id
       },
-      include: [
-        {
-          model: Post,
-          attributes: ['id', 'title', 'post_url', 'created_at']
-        },
-        {
-          model: Comment,
-          attributes: ['id', 'comment_text', 'created_at'],
-          include: {
-            model: Post,
-            attributes: ['title']
-          }
-        },
-    ]
+      // include: [
+      //   {
+      //     model: Post,
+      //     attributes: ['id', 'title', 'post_url', 'created_at']
+      //   },
+      //   {
+      //     model: Comment,
+      //     attributes: ['id', 'comment_text', 'created_at'],
+      //     include: {
+      //       model: Post,
+      //       attributes: ['title']
+      //     }
+      //   },
+      // ]
     })
       .then(dbUserData => {
         if (!dbUserData) {
@@ -51,10 +51,8 @@ router.get('/:id', (req, res) => {
 
 // POST /api/users
 router.post('/', (req, res) => {
-    // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
     User.create({
       username: req.body.username,
-      email: req.body.email,
       password: req.body.password
     })
     .then(dbUserData => {
@@ -73,11 +71,11 @@ router.post('/', (req, res) => {
 router.post('/login', (req, res) => {
   User.findOne({
     where: {
-      email: req.body.email
+      username: req.body.username
     }
   }).then(dbUserData => {
     if (!dbUserData) {
-      res.status(400).json({ message: 'No user with that email address!' });
+      res.status(400).json({ message: 'No user with that username!' });
       return;
     }
 
