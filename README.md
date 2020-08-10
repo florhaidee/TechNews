@@ -44,12 +44,12 @@
 
   ## Usage
 
-  To use the app on your machine type on the browser: "http://localhost:3001/"
+  To use the app on your machine type on the browser: "http://localhost:3001/" or just  go to the deployed URL: https://gentle-bayou-27027.herokuapp.com/
 
     #### Homepage:
     it will display the following site:
 
-    ![main page](./public/images/main-page.png)
+![main page](./public/images/main-page.png)
 
     Here you can see all post created 
 
@@ -85,11 +85,6 @@
         And will take you to a new page to add a new comment:
 
 ![add a new comment](./public/images/add-comment.png)
-
-
-You can also see the application deployed on the followig URL:
-
-https://gentle-bayou-27027.herokuapp.com/
 
 
   ## License
