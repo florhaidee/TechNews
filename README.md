@@ -37,9 +37,7 @@
 
   ## Usage
 
-  To know how to use this application, click on the video below.
-
-[![Watch the video](https://i.imgur.com/s7c6ZED.png)](https://drive.google.com/file/d/1_jdxS8inUWWTgCtZyywaDM2eShltGCAh/view)
+  
 
 
 
