@@ -1,5 +1,5 @@
 {
-  "name": "TechNews",
+  "name": "technews",
   "version": "1.0.0",
   "description": "A CMS-style blog site to publish articles, blog posts, your thoughts and opinions",
   "main": "server.js",
