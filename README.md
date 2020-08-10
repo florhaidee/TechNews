@@ -3,7 +3,7 @@
 
   ## Description 
 
- A Tech blog wherer users can login and add post and/or comments
+ A Tech blog where users can login and add post and/or comments to it
 
 
   ## Table of Contents 
@@ -19,7 +19,7 @@
 
     1. Download or clone this repository on your computer.
 
-   ![how download or clone repository](./public/images/download.png")
+![how download or clone repository](./public/images/download.png)
 
     2. To install all dependencies:
 
@@ -35,16 +35,69 @@
         * Configure MYSQL to create the database;
             Yoy can do it by going to folder 'config/' and the file connection.js to configure the conection to the database;
 
+    3. Start the application:
+        *Open the terminal on the root directory of the project:
+        ```
+        npm start
+
+        ```
+
   ## Usage
 
-  
+  To use the app on your machine type on the browser: "http://localhost:3001/"
 
+    #### Homepage:
+    it will display the following site:
+
+    ![main page](./public/images/main-page.png)
+
+    Here you can see all post created 
+
+    #### Login:
+    To login, click on the navigation bar, on "Login" option and will display the login or signup page:
+
+![login page](./public/images/login.png)
+
+    #### Dashboard:
+
+        ##### Create a post
+
+            After signup or login, will get you to your dashboard page:
+
+![dashboard page](./public/images/dashboard.png)
+
+            There will display all your post and the option to create a new one.
+
+        ##### Edit a post
+
+            You can edit a previous post too:
+
+![how edit a post](./public/images/edit-post.png)
+
+            On this page you can edit your post or delete it.
+
+    #### Add comment:
+
+        To add a comment just go to the homepage and click on the comments link on the booton of the post:
+
+![how add a new comment](./public/images/main-page.png)
+
+        And will take you to a new page to add a new comment:
+
+![add a new comment](./public/images/add-comment.png)
+
+
+You can also see the application deployed on the followig URL:
+
+https://gentle-bayou-27027.herokuapp.com/
 
 
   ## License
 
     Copyright © 2020 florhaidee. 
-    Licensed under the MIT to see more about this license you can find it on the file 'license.txt' go to [MIT-license](./assets/MIT-license.txt) 
+    Licensed under the MIT to see more about this license you can find it on the file 'license.txt' go to:
+
+[License](LICENSE) 
 
 
   ## Contributing 
