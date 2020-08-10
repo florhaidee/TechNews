@@ -3,6 +3,8 @@ const express = require('express');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 
+const app = express();
+const PORT = process.env.PORT || 3001;
 
 //setup handlebars as template engine
 const helpers = require('./utils/helpers');
@@ -21,9 +23,6 @@ const sess = {
     db: sequelize
   })
 };
-
-const app = express();
-const PORT = process.env.PORT || 3001;
 
 //use handlebard template engine
 app.engine('handlebars', hbs.engine);
