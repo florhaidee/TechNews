@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A CMS-style blog site to publish articles, blog posts, your thoughts and opinions",
   "main": "server.js",
+  "engines": {
+    "node": "12.18.2",
+    "npm": "6.14.5"
+  },
   "scripts": {
     "test": "jest",
     "start": "node server.js"
