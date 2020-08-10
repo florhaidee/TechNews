@@ -3,7 +3,6 @@ const { User, Post, Comment } = require("../../models");
 
 // GET /api/users
 router.get('/', (req, res) => {
-    // Access our User model and run .findAll() method)
     User.findAll({
         attributes: { exclude: ['password'] }
     })
